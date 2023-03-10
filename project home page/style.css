@@ -1,0 +1,942 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+#page7 {
+  padding: 0px 112px;
+  margin-top: 73px;
+}
+#page7 .p7main {
+  display: flex;
+  justify-content: space-between;
+}
+#page7 .p7main .bloghead {
+  font-size: 34px;
+  font-weight: 600;
+  color: rgb(46, 58, 89);
+}
+#page7 .allcards {
+  display: flex;
+  gap: 32px;
+  margin-top: 56px;
+  margin-bottom: 80px;
+}
+#page7 .allcards .cards {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  height: 416px;
+  transition: 0.5s all;
+}
+#page7 .allcards .cards:hover {
+  transform: scale(1.1);
+}
+#page7 .allcards .cards .description {
+  margin: 24px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(46, 58, 89);
+}
+#page7 .allcards .cards .date {
+  display: flex;
+  gap: 20px;
+}
+#page7 .allcards .cards .date nav {
+  width: 130px;
+  height: 32px;
+  padding: 6px 16px;
+  border: 1px solid rgb(197, 206, 224);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribepage p:nth-child(1) {
+  font-size: 24px;
+  color: rgb(46, 58, 89);
+  font-weight: 400;
+}
+.subscribepage form input {
+  width: 408px;
+  height: 48px;
+  background-color: rgb(247, 249, 252);
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid rgb(228, 233, 242);
+  padding: 0 16px;
+  margin-top: 40px;
+  margin-right: 8px;
+  transition: 0.5s all;
+}
+.subscribepage form input:hover {
+  border: 1px solid rgb(255, 61, 113);
+}
+.subscribepage form input:focus {
+  border: 1px solid rgb(255, 61, 113);
+}
+.subscribepage form button {
+  width: 176px;
+  height: 48px;
+  color: white;
+  background-color: rgb(51, 102, 255);
+  border: none;
+  border-radius: 8px;
+  transition: 0.5s all;
+}
+.subscribepage form button:hover {
+  background-color: white;
+  border: 1px solid rgb(255, 61, 113);
+}
+.subscribepage form button:hover a {
+  color: rgb(255, 61, 113);
+}
+.subscribepage form button a {
+  color: white;
+}
+
+#questions {
+  padding: 0px 320px;
+}
+#questions nav {
+  text-align: center;
+  color: rgb(46, 58, 89);
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: 161px;
+  margin-bottom: 96px;
+}
+#questions aside {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  height: auto;
+  margin: 30px 0px;
+  border-bottom: 1px solid rgb(197, 206, 224);
+}
+#questions aside span:nth-child(1) {
+  font-size: 20px;
+  color: rgb(46, 58, 89);
+  margin-bottom: 16px;
+}
+#questions aside span:nth-child(2) i {
+  transition: 0.5s all;
+}
+#questions aside span:nth-child(2) i:hover {
+  transform: rotate(45deg);
+}
+#questions aside ul {
+  margin: 20px 0px;
+}
+#questions aside ul li {
+  color: rgb(46, 58, 89);
+}
+#questions aside ul li:nth-child(3) {
+  margin-top: 20px;
+}
+
+.mainul i {
+  transition: 0.5s all;
+  margin-left: 417px;
+  color: black;
+}
+.mainul ul li {
+  font-size: 20px;
+}
+.mainul .hidden {
+  display: none;
+  transition: 0.5s all;
+}
+.mainul:hover .hidden {
+  display: block;
+}
+.mainul:hover span i {
+  transform: rotate(45deg);
+}
+
+.demobg {
+  width: 100%;
+  height: 240px;
+  padding: auto;
+}
+.demobg img:nth-child(1) {
+  padding: 0px 112px;
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  z-index: -1;
+}
+.demobg img:nth-child(2) {
+  position: absolute;
+  left: 100px;
+  z-index: 2;
+}
+.demobg .demotext {
+  position: absolute;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+  z-index: 2;
+}
+.demobg .demotext p:nth-child(1) {
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+}
+.demobg .demotext p:nth-child(2) {
+  width: 528px;
+  color: white;
+  margin-top: 50px;
+}
+.demobg .demobutton {
+  width: 90%;
+  height: 240px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  align-items: center;
+}
+.demobg .demobutton button {
+  width: 174px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  transition: 0.5s all;
+}
+.demobg .demobutton button:nth-child(1) {
+  background-color: white;
+}
+.demobg .demobutton button:nth-child(1):hover {
+  background-color: rgb(34, 43, 69);
+  border: 1px solid white;
+}
+.demobg .demobutton button:nth-child(1):hover a {
+  color: white;
+}
+.demobg .demobutton button:nth-child(1) a {
+  color: rgb(34, 43, 69);
+}
+.demobg .demobutton button:nth-child(2) {
+  background-color: rgb(34, 43, 69);
+}
+.demobg .demobutton button:nth-child(2):hover {
+  background-color: white;
+  border: 1px solid rgb(34, 43, 69);
+}
+.demobg .demobutton button:nth-child(2):hover a {
+  color: rgb(34, 43, 69);
+}
+.demobg .demobutton button:nth-child(2) a {
+  color: white;
+  line-height: 20px;
+}
+
+footer {
+  color: rgb(46, 58, 89);
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 112px;
+  gap: 104px;
+  flex-wrap: wrap;
+}
+footer .fsposter {
+  height: 240px;
+}
+footer .fsposter div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+footer .fsposter div:nth-child(1) p {
+  font-weight: 600;
+  font-size: 24px;
+}
+footer .fsposter .descript {
+  margin-top: 38px;
+  width: 200px;
+}
+footer .company,
+footer .product {
+  height: 240px;
+}
+footer .company p,
+footer .product p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+footer .company ul,
+footer .product ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .company ul li,
+footer .product ul li {
+  transition: 0.5s all;
+}
+footer .company ul li:hover,
+footer .product ul li:hover {
+  transform: scale(1.2);
+}
+footer .company ul li:hover a,
+footer .product ul li:hover a {
+  color: rgb(255, 61, 113);
+}
+footer .company ul li a,
+footer .product ul li a {
+  color: rgb(46, 58, 89);
+}
+footer .contact nav {
+  transition: 0.5s all;
+}
+footer .contact nav:hover {
+  transform: scale(1.1);
+  color: rgb(255, 61, 113);
+}
+footer .contact p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+footer .contact ul {
+  display: flex;
+  margin-top: 48px;
+  gap: 24px;
+}
+footer .contact ul li i {
+  width: 25px;
+  height: 25px;
+  transform: scale(1.5);
+  transition: 0.5s all;
+  color: rgb(46, 58, 89);
+}
+footer .contact ul li i:hover {
+  transform: scale(2);
+  color: rgb(255, 61, 113);
+}
+footer #reserved {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+footer #reserved .terms {
+  display: flex;
+  gap: 24px;
+}
+footer #reserved .terms nav {
+  transition: 0.5s all;
+}
+footer #reserved .terms nav:hover {
+  transform: scale(1.1);
+}
+footer #reserved .terms nav:hover a {
+  color: rgb(255, 61, 113);
+}
+footer #reserved .terms nav a {
+  color: rgb(46, 58, 89);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+*::-moz-selection {
+  background-color: rgb(255, 61, 113);
+  color: white;
+}
+
+*::selection {
+  background-color: rgb(255, 61, 113);
+  color: white;
+}
+
+#firstpage {
+  width: 100%;
+  height: 100vh;
+}
+
+#headtext::-moz-selection {
+  background-color: gray !important;
+}
+
+#headtext::selection {
+  background-color: gray !important;
+}
+
+.headtext::-moz-selection {
+  background-color: gray !important;
+}
+
+.headtext::selection {
+  background-color: gray !important;
+}
+
+header {
+  padding: 0 112px;
+  height: 10vh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  font-family: "Euclid Circular A", sans-serif;
+}
+header img:nth-child(1) {
+  display: none;
+}
+header ul {
+  display: flex;
+  gap: 50px;
+}
+header ul a {
+  color: rgb(46, 58, 89);
+  font-weight: 400;
+  transition: 0.3s all;
+  font-family: "Euclid Circular A", sans-serif;
+}
+header .icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+header .icon .tag {
+  width: 100%;
+  color: rgb(46, 58, 89);
+  font-size: 24px;
+  font-weight: 600;
+}
+header img {
+  width: 32px;
+  height: 44px;
+}
+header .search {
+  display: flex;
+  gap: 0px;
+  display: flex;
+  align-items: center;
+}
+header .search button {
+  border: 1px solid rgb(197, 206, 224);
+  border-radius: 8px;
+  font-weight: 400;
+  font-family: "Euclid Circular A", sans-serif;
+}
+header .demo {
+  width: 113px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 8px;
+  margin-left: 30px;
+  transition: 0.5s all;
+  font-family: "Euclid Circular A", sans-serif;
+}
+header .buy {
+  width: 155px;
+  height: 40px;
+  background-color: rgb(255, 61, 113);
+  color: white;
+  transition: all 0.5s;
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+header .search .buy:hover {
+  background-color: white;
+  color: rgb(255, 61, 113);
+  border: 1px solid rgb(255, 61, 113);
+}
+
+header .search .demo:hover {
+  border: 1px solid rgb(255, 61, 113);
+  color: rgb(255, 61, 113);
+}
+
+header ul li a:hover {
+  color: rgb(255, 61, 113);
+}
+
+.firstp {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Euclid Circular A", sans-serif;
+}
+.firstp h1 {
+  width: 800px;
+  color: rgb(46, 58, 89);
+  height: 144px;
+  font-size: 60px;
+  line-height: 72px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 230px;
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 600;
+}
+.firstp h1 span {
+  color: rgb(255, 61, 113);
+  font-weight: 600;
+  font-family: "Euclid Circular A", sans-serif;
+}
+.firstp p {
+  width: 800px;
+  height: 48px;
+  color: rgb(143, 155, 179);
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 32px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Euclid Circular A", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 56px;
+  gap: 20px;
+}
+.buttons .try {
+  width: 199px;
+  height: 48px;
+  background-color: rgb(0, 149, 255);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-family: "Euclid Circular A", sans-serif;
+  transition: all 0.5s;
+}
+.buttons .watch {
+  width: 184px;
+  height: 48px;
+  background-color: transparent;
+  color: rgb(0, 149, 255);
+  border: 1px solid rgb(0, 149, 255);
+  border-radius: 8px;
+  font-family: "Euclid Circular A", sans-serif;
+  transition: all 0.5s;
+}
+.buttons .try:hover {
+  background-color: white;
+  color: rgb(0, 149, 255);
+  border: 1px solid rgb(0, 149, 255);
+}
+.buttons .watch:hover {
+  color: white;
+  background-color: rgb(0, 149, 255);
+  border: none;
+}
+
+#secondpage .statistic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#secondpage .statistic img {
+  width: 768px;
+  height: 577px;
+  position: absolute;
+  z-index: 1;
+}
+#secondpage .backgrounder {
+  margin-top: 420px;
+  width: 100%;
+  height: 496px;
+}
+#secondpage .backgrounder .buttons1 {
+  display: none;
+}
+#secondpage .backgrounder img {
+  width: 100%;
+}
+#secondpage .backgrounder aside {
+  display: none;
+}
+#secondpage nav {
+  padding: 0 112px;
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Euclid Circular A", sans-serif;
+}
+#secondpage nav .content1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 24px;
+  font-family: "Euclid Circular A", sans-serif;
+  color: rgb(34, 43, 69);
+}
+#secondpage nav .content1 p:nth-child(1) {
+  color: rgb(0, 149, 255);
+  font-size: 20px;
+}
+#secondpage nav .content1 h2 {
+  font-weight: 600;
+  line-height: 40px;
+}
+#secondpage nav .content1 p:nth-child(3) {
+  color: rgb(143, 155, 179);
+  line-height: 28px;
+  width: 384px;
+  justify-self: 72px;
+}
+#secondpage aside {
+  padding: 0 112px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 169px;
+}
+#secondpage aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  margin-top: 96px;
+}
+#secondpage aside div p:nth-child(2) {
+  color: rgb(46, 58, 89);
+  margin-top: 32px;
+  width: 368px;
+  text-align: center;
+}
+#secondpage aside div p:nth-child(3) {
+  color: rgb(46, 58, 89);
+  margin-top: 16px;
+  width: 368px;
+  text-align: center;
+}
+#secondpage aside div img {
+  width: 64px;
+  height: 64px;
+  width: 370px;
+}
+
+#thirdpage {
+  padding: 112px 112px;
+  margin-top: 136px;
+  width: 100%;
+  height: 944px;
+  background-color: rgb(255, 214, 217);
+}
+#thirdpage div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+#thirdpage div:nth-child(1) button {
+  width: 199px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: rgb(0, 149, 255);
+  border: none;
+  color: white;
+  transition: all 0.5s;
+}
+#thirdpage div:nth-child(1) button:hover {
+  color: rgb(0, 149, 255);
+  background-color: white;
+  border: 1px solid rgb(0, 149, 255);
+  transform: scale(1.1);
+}
+#thirdpage .paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#thirdpage .paragraph p:nth-child(1) {
+  color: rgb(46, 58, 89);
+  font-size: 34px;
+  font-weight: 600;
+}
+#thirdpage .paragraph p:nth-child(2) {
+  color: rgb(46, 58, 89);
+  width: 488px;
+  height: 48px;
+  line-height: 28px;
+}
+#thirdpage .social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 64px;
+}
+#thirdpage .social div {
+  width: 280px;
+  height: 112px;
+  background-color: white;
+  display: flex;
+  border-radius: 16px;
+}
+#thirdpage .social div nav {
+  display: flex;
+  flex-direction: column;
+  width: 184px;
+  gap: 8px;
+  margin-top: 20px;
+}
+#thirdpage .social div nav p a {
+  font-size: 20px;
+  color: rgb(46, 58, 89);
+}
+#thirdpage .social div nav p:nth-child(2) {
+  color: rgb(46, 58, 89);
+  font-size: 12px;
+  width: 150px;
+  font-weight: 400;
+}
+#thirdpage .social div img {
+  width: 48px;
+  height: 48px;
+  margin: 16px 16px 48px 16px;
+}
+#thirdpage .social div:nth-child(n+1) {
+  transition: 0.5s all;
+}
+#thirdpage .social div:nth-child(n+1):hover {
+  transform: scale(0.9);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#page4 {
+  width: 100%;
+  margin-top: 88px;
+  padding: 0 216px;
+}
+#page4 .headtext {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+#page4 .maintexts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 34px;
+}
+#page4 p:nth-child(2) {
+  color: rgb(143, 155, 179);
+  display: flex;
+  justify-content: center;
+  width: 360px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Euclid Circular A", sans-serif;
+}
+#page4 aside {
+  display: flex;
+  justify-content: space-between;
+}
+#page4 aside .first {
+  margin-right: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+#page4 aside div img {
+  width: 384px;
+  height: 320px;
+}
+#page4 aside div p:nth-child(1) {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(46, 58, 89);
+  font-weight: 600;
+}
+#page4 aside div p:nth-child(2) {
+  color: rgb(46, 58, 89);
+  line-height: 28px;
+  text-align: left;
+  width: 384px;
+}
+#page4 .second {
+  display: flex;
+  margin-left: 104px;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+#page4 .features {
+  margin-top: 112px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#page4 .features button {
+  width: 213px;
+  height: 48px;
+  background-color: rgb(0, 149, 255);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  line-height: 20px;
+  transition: 0.5s all;
+}
+#page4 .features button a {
+  color: white;
+}
+#page4 .features button:hover {
+  color: rgb(0, 149, 255);
+  background-color: white;
+  border: 1px solid rgb(0, 149, 255);
+}
+#page4 .features button:hover a {
+  color: rgb(0, 149, 255);
+}
+
+.slidebutton .button {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.slidebutton .button i {
+  position: fixed;
+  right: 50px;
+  top: 700px;
+}
+
+.photostatic img {
+  width: 100%;
+  height: 340px;
+  margin-top: 144px;
+  margin-bottom: 96px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.maintexts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.secondtexts {
+  color: rgb(143, 155, 179);
+  display: flex;
+  justify-content: center;
+  width: 360px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Euclid Circular A", sans-serif;
+  margin-bottom: 56px;
+}
+
+#page5 {
+  width: 100%;
+  margin-bottom: 64px;
+}
+#page5 .servicesmap {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+#page5 .servicesmap img {
+  width: 100%;
+  height: 100%;
+}
+
+#page6 {
+  width: 100%;
+  background-color: rgb(247, 249, 252);
+  height: 512px;
+}
+#page6 aside {
+  width: 100%;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page6 aside .ulvin {
+  display: flex;
+  margin-top: 56px;
+}
+#page6 aside .ulvin img {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+#page6 aside .ulvin .surname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#page6 aside .ulvin .surname p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 400px;
+  color: rgb(34, 43, 69);
+}
+#page6 aside .ulvin .surname p:nth-child(2) {
+  font-size: 16px;
+  color: rgb(143, 155, 179);
+}
+#page6 aside .maintexts {
+  width: 591px;
+  text-align: center;
+  margin-top: 64px;
+  display: block;
+}
+#page6 aside .uxdesign {
+  color: rgb(46, 58, 89);
+  width: 592px;
+  height: 96px;
+}
+#page6 aside .skip {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 112px;
+  margin-top: 72px;
+}
+#page6 aside .skip nav {
+  width: 56px;
+  height: 56px;
+  background-color: rgb(237, 241, 247);
+  display: grid;
+  place-items: center;
+  border-radius: 56px;
+}/*# sourceMappingURL=style.css.map */

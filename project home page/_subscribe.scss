@@ -1,0 +1,50 @@
+.subscribepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p:nth-child(1){
+        font-size: 24px;
+        color: rgba(46, 58, 89, 1);
+        font-weight: 400;
+    }
+    form{
+        input{
+            width: 408px;
+            height: 48px;
+            background-color: rgba(247, 249, 252, 1);
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid rgba(228, 233, 242, 1);
+            padding: 0 16px;
+            margin-top: 40px;
+            margin-right: 8px;
+            transition: 0.5s all;
+            &:hover{
+                border: 1px solid rgba(255, 61, 113, 1);
+            }
+            &:focus{
+                border: 1px solid rgba(255, 61, 113, 1);
+            }
+        }
+        button{
+            width: 176px;
+            height: 48px;
+            color:white;
+            background-color: rgba(51, 102, 255, 1);
+            border: none;
+            border-radius: 8px;
+            transition: 0.5s all;
+            &:hover{
+                background-color: white;
+                border: 1px solid rgba(255, 61, 113, 1);
+                a{
+                    color: rgba(255, 61, 113, 1);
+                }
+                
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+}

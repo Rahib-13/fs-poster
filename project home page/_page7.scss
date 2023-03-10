@@ -1,0 +1,51 @@
+#page7 {
+  padding: 0px 112px;
+  margin-top: 73px;
+  .p7main {
+    display: flex;
+    justify-content: space-between;
+    .bloghead {
+      font-size: 34px;
+      font-weight: 600;
+      color: rgba(46, 58, 89, 1);
+    }
+  }
+  .allcards {
+    display: flex;
+    gap: 32px;
+    margin-top: 56px;
+    margin-bottom: 80px;
+    .cards{
+      display: flex;
+      flex-direction: column;
+      width: 384px;
+      height: 416px;
+      transition: 0.5s all;
+      &:hover{
+        transform: scale(1.1);
+      }
+        .description{
+          margin: 24px 0px;
+          font-weight: 600;
+          font-size: 20px;
+          color: rgba(46, 58, 89, 1);
+        }
+        .date{
+            display: flex;
+            gap: 20px;
+
+            nav{
+                width: 130px;
+                height: 32px;
+                padding: 6px 16px;
+                border: 1px solid rgba(197, 206, 224, 1);
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+  }
+}
