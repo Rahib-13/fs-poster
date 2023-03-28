@@ -26,7 +26,7 @@
   transition: 0.5s all;
 }
 #page7 .allcards .cards:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 #page7 .allcards .cards .description {
   margin: 24px 0px;
@@ -621,7 +621,6 @@ header ul li a:hover {
     margin-bottom: 50px;
     width: 95vw !important;
     height: 40vh !important;
-    margin-top: 50px;
   }
   #secondpage .backgrounder {
     margin: 0;
