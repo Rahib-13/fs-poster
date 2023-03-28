@@ -1023,6 +1023,9 @@ header ul li a:hover {
   #questions .mainul ul li span {
     display: none;
   }
+  .buttons {
+    z-index: 5;
+  }
 }
 .firstp {
   position: relative;
