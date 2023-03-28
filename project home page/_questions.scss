@@ -9,6 +9,7 @@
     margin-bottom: 96px;
   }
   aside {
+    
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -41,6 +42,7 @@
   }
 }
 .mainul{
+
   i{
     transition: 0.5s all;
     margin-left: 417px;
@@ -54,8 +56,10 @@
     transition: 0.5s all;
   }
   &:hover{
+    
     .hidden{
       display: block;
+      
     }
     span{
       i{

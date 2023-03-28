@@ -72,7 +72,6 @@ footer {
           color: rgba(46, 58, 89, 1);
           &:hover {
             transform: scale(2);
-            color: rgba(255, 61, 113, 1);
           }
         }
       }
@@ -86,17 +85,29 @@ footer {
     .terms {
       display: flex;
       gap: 24px;
-      nav{
-        transition: 0.5s all;
-        &:hover{
-          transform: scale(1.1);
-          a{
-            color: rgba(255, 61, 113, 1);
-          }
-        }
-        a{
-          color: rgba(46, 58, 89, 1);
-        }
+    }
+  }
+}
+@media screen and (max-width:576px){
+  footer{
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column;
+    margin-top: 50px !important;
+    .fsposter{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div{
+        width: 100vw;
+        justify-content: center;
+      }
+      p{
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0;
       }
     }
   }

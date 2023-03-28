@@ -1,110 +1,653 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Euclid Circular A", sans-serif;
+}
+*::selection {
+  background-color: rgba(255, 61, 113, 1);
+  color: white;
+}
+#firstpage {
+  width: 100%;
+  height: 100vh;
+}
+#headtext::selection {
+  background-color: gray !important;
+}
+.headtext::selection {
+  background-color: gray !important;
+}
+header {
+  padding: 0 112px;
+  height: 10vh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  font-family: "Euclid Circular A", sans-serif;
+  .menuikonu{
+    display: none;
   }
-  * {
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 400;
+
+  ul {
+    display: flex;
+    gap: 50px;
+    a {
+      color: black;
+      font-weight: 400;
+      transition: 0.3s all;
+      font-family: "Euclid Circular A", sans-serif;
+    }
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 25%;
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  img {
+    width: 32px;
+    height: 44px;
+  }
+  .search {
+    display: flex;
+    gap: 0px;
+    button {
+      border: 1px solid rgba(197, 206, 224, 1);
+      border-radius: 8px;
+      font-weight: 400;
+      font-family: "Euclid Circular A", sans-serif;
+    }
+    display: flex;
+    align-items: center;
+  }
+  .demo {
+    width: 113px;
+    height: 40px;
+    background-color: transparent;
+    margin-right: 8px;
+    margin-left: 30px;
+    transition: 0.5s all;
     font-family: "Euclid Circular A", sans-serif;
   }
-  *::selection {
+  .buy {
+    width: 155px;
+    height: 40px;
     background-color: rgba(255, 61, 113, 1);
     color: white;
+    transition: all 0.5s;
+    font-family: "Euclid Circular A", sans-serif;
   }
+  @include mobile {
+    width: 360px;
+    height: 72px;
+    display: flex;
+    justify-content: baseline;
+    gap: 0px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    .links {
+      ul {
+        display: none;
+      }
+    }
+    .menuicon {
+      img {
+        visibility: visible;
+        width: 24px;
+        height: 24px;
+        left: 16px;
+      }
+    }
+    .menuicon {
+      display: inline;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+// Hover//
+header .search .buy:hover {
+  background-color: white;
+  color: rgba(255, 61, 113, 1);
+  border: 1px solid rgba(255, 61, 113, 1);
+}
+header .search .demo:hover {
+  border: 1px solid rgba(255, 61, 113, 1);
+  color: rgba(255, 61, 113, 1);
+}
+header ul li a:hover {
+  color: rgba(255, 61, 113, 1);
+}
+
+// mobile screen
+
+@media (max-width: 576px) {
+  .demo {
+    display: none;
+  }
+
   #firstpage {
-    width: 100%;
-    height: 100vh;
-  }
-  #headtext::selection {
-    background-color: gray !important;
-  }
-  .headtext::selection {
-    background-color: gray !important;
+    width: 100vw;
+    height: 400px;
   }
   header {
-    padding: 0 112px;
+    width: 100vw;
     height: 10vh;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 3;
-    font-family: "Euclid Circular A", sans-serif;
-    img:nth-child(1){
-      display: none;
+    padding: 0px 20px;
+    margin: 0;
+    justify-content: flex-start;
+    gap: 50px;
+    .menuikonu{
+      display: block;
     }
-    ul {
-      display: flex;
-      gap: 50px;
-      a {
-        color: rgba(46, 58, 89, 1);
-        font-weight: 400;
-        transition: 0.3s all;
-        font-family: "Euclid Circular A", sans-serif;
-      }
-    }
-    .icon {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    h2 {
       width: 200px;
-      .tag{
-        width: 100%;
-        color: rgba(46, 58, 89, 1);
-        font-size: 24px;
-        font-weight: 600;
-      }
+      // color: red;
+      font-size: 16px;
     }
-    img {
-      width: 32px;
-      height: 44px;
+    .links {
+      ul {
+        display: none;
+      }
     }
     .search {
-      display: flex;
-      gap: 0px;
-      button {
-        border: 1px solid rgba(197, 206, 224, 1);
-        border-radius: 8px;
-        font-weight: 400;
-        font-family: "Euclid Circular A", sans-serif;
+      width: 45vw;
+      i {
+        margin-right: 20px;
       }
+      .buy {
+        width: 80%;
+        height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+  .button {
+    display: none;
+    a {
+      display: none;
+    }
+  }
+  #mainpage {
+    width: 100vw;
+    h1 {
+      width: 100vw;
+      height: 100px;
+      font-size: 24px;
+      margin-top: 150px;
+      padding: 0;
+      line-height: 30px;
+      position: relative;
+    }
+    p {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      height: 150px;
+      margin-top: 50px;
+    }
+  }
+  .buttons {
+    position: absolute;
+    top: 850px;
+    display: flex;
+    flex-direction: column;
+  }
+  #secondpage {
+    position: relative;
+
+    .statistic {
+      margin-bottom: 300px;
+      width: 100vw !important;
+
+      img {
+        margin-bottom: 50px;
+        width: 95vw !important;
+        height: 40vh !important;
+        margin-top: 50px;
+        // object-fit:
+      }
+    }
+    .backgrounder {
+      margin: 0;
+      padding: 0;
+      // position: absolute;
+      // z-index: 2  ;
+      // margin-top: 300px;
+      img {
+        margin-top: 300px;
+      }
+    }
+    .content1 {
+      width: 100vw;
       display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      p {
+        width: 100vw;
+        text-align: center;
+      }
+    }
+    .firstnav {
+      margin: 0;
+      padding: 0;
+      display: block;
+      h2 {
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .descriptionF {
+        width: 100vw !important;
+      }
+      img {
+        width: 100vw;
+      }
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
       align-items: center;
     }
-    .demo {
-      width: 113px;
-      height: 40px;
-      background-color: transparent;
-      margin-right: 8px;
-      margin-left: 30px;
-      transition: 0.5s all;
-      font-family: "Euclid Circular A", sans-serif;
+    div:nth-child(5) {
+      display: none;
     }
-    .buy {
-      width: 155px;
-      height: 40px;
-      background-color: rgba(255, 61, 113, 1);
-      color: white;
-      transition: all 0.5s;
-      font-family: "Euclid Circular A", sans-serif;
+    div:nth-child(6) {
+      display: none;
     }
   }
-  
-  // Hover//
-  header .search .buy:hover {
-    background-color: white;
-    color: rgba(255, 61, 113, 1);
-    border: 1px solid rgba(255, 61, 113, 1);
+  #thirdpage div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start !important;
   }
-  header .search .demo:hover {
-    border: 1px solid rgba(255, 61, 113, 1);
-    color: rgba(255, 61, 113, 1);
+  #thirdpage {
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 20px !important;
+    height: auto;
+    .paragraph {
+      margin-top: 25px;
+      width: 100vw;
+      height: 100px;
+      p:nth-child(1) {
+        font-size: 24px;
+        width: 100vw;
+        padding: 0px 20px;
+        text-align: center;
+      }
+      p:nth-child(2) {
+        width: 100vw !important;
+        text-align: center;
+        padding: 0px 10px;
+        font-weight: 400;
+      }
+    }
+    .disnon {
+      display: none;
+    }
+    .social {
+      margin-top: 50px;
+      div {
+        width: 90vw !important;
+        margin: 0px 20px;
+      }
+      .buttonsocial {
+        display: block;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        button {
+          width: 80vw;
+          height: 48px;
+          border-radius: 8px;
+          background-color: rgba(0, 149, 255, 1);
+          border: none;
+          color: white;
+          transition: all 0.5s;
+        }
+      }
+    }
   }
-  header ul li a:hover {
-    color: rgba(255, 61, 113, 1);
+  #page4 {
+    margin: 0px !important;
+    padding: 0px !important;
+    .headtext {
+      width: 100vw;
+      margin-top: 20px;
+      color: rgba(46, 58, 89, 1);
+    }
+    aside {
+      display: none;
+      div {
+        display: none;
+        p {
+          display: none !important;
+          color: red;
+        }
+      }
+    }
+    .mobilescreen {
+      display: block;
+      div {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 0px, 20px, auto;
+      }
+      aside:nth-child(2) {
+        color: rgba(46, 58, 89, 1);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 75vw;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 20px;
+      }
+      aside:nth-child(3) {
+        color: rgba(46, 58, 89, 1);
+        line-height: 30px;
+        width: 90%;
+        margin-left: 20px;
+      }
+    }
   }
+  #page5 {
+    div {
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        display: block;
+        height: 646px;
+      }
+    }
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .maintexts {
+        width: 90vw;
+        color: rgba(46, 58, 89, 1);
+        text-align: center;
+        font-size: 24px;
+      }
+      .secondtexts {
+        font-size: 16px;
+      }
+    }
+    .servicesmap {
+      img:nth-child(1) {
+        display: none;
+      }
+      img:nth-child(2) {
+        display: block !important;
+        width: 350px;
+        height: 175px;
+      }
+    }
+  }
+  #page6 {
+    width: 100vw;
+    aside {
+      width: 100vw;
+      .maintexts {
+        width: 100vw !important;
+      }
+      .skip {
+        display: flex;
+        padding: 0px 10px 0px 10px !important;
+        margin: 0 !important;
+        flex-direction: column;
+        nav {
+          display: none !important;
+          i {
+            display: none;
+          }
+        }
+        .uxdesign {
+          width: 90vw;
+          line-height: 24px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          height: auto;
+        }
+      }
+      .ulvin {
+        margin-top: 50px;
+      }
+    }
+  }
+  #page7 {
+    width: 100vw;
+    margin-top: 150px;
+    padding: 0;
+    .p7main {
+      p {
+        width: 100vw;
+        text-align: center;
+      }
+      a {
+        display: none;
+      }
+    }
+    .allcards {
+      display: flex;
+      width: 100vw;
+      flex-direction: column;
+      padding: 0px 10px 0px 10px;
+      .cards {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .allblogs {
+      display: block;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      a {
+        color: rgba(51, 102, 255, 1);
+      }
+    }
+  }
+  .subscribepage {
+    p {
+      font-weight: 600;
+    }
+    form {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      input {
+        width: 90%;
+      }
+      button {
+        width: 85%;
+      }
+    }
+  }
+  #questions {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    margin-bottom: 100px;
+    nav {
+      width: 100%;
+      font-size: 24px;
+    }
+    aside {
+      margin: 0;
+      padding: 0;
+      span {
+        font-size: 16px;
+      }
+
+      span:nth-child(1) {
+        display: inline-block;
+        width: 80%;
+        font-size: 16px;
+      }
+    }
+    .mainul {
+      margin: 0 !important;
+      padding: 0 !important;
+      ul {
+        width: 80vw;
+        li {
+          font-size: 16px;
+          width: 80%;
+          margin: 0;
+        }
+      }
+      .plus {
+        margin-left: -45px;
+        margin-right: 20px;
+        padding: 0;
+      }
+    }
+    .lastphoto {
+      width: 100vw;
+      height: 500px;
+      .demobg {
+        display: flex;
+        width: 100vw;
+        height: auto !important;
+        justify-content: center !important;
+        img:nth-child(1) {
+          display: none;
+        }
+        .dnone {
+          display: none !important;
+        }
+        img:nth-child(3) {
+          position: relative;
+        }
+      }
+    }
+  }
+  footer {
+    position: relative;
+    margin-top: 700px;
+    .fsposter {
+      text-align: center;
+      justify-content: center;
+      .lastposter {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+        li:nth-child(2){
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .demobg img:nth-child(2) {
+      display: none !important;
+    }
+    .company {
+      width: 100vw;
+      p {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+      }
+      ul {
+        width: 100%;
+        li {
+          display: grid;
+          place-items: center;
+        }
+      }
+    }
+    .product {
+      width: 100vw;
+      p {
+        text-align: center;
+        font-weight: 600;
+      }
+      ul {
+        li {
+          text-align: center;
+        }
+      }
+    }
+    .contact {
+      width: 100vw;
+      p {
+        width: 100%;
+        text-align: center;
+      }
+      nav {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        i {
+          margin-right: 10px;
+        }
+      }
+      ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 20px;
+      }
+    }
+    #reserved {
+      width: 100vw;
+      div:nth-child(1) {
+        width: 100%;
+        text-align: center;
+      }
+      .terms {
+        display: none;
+      }
+    }
+  }
+  #questions {
+    padding: 0px 20px;
+    .mainul {
+      ul {
+        li {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
